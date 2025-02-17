@@ -28,10 +28,21 @@
         "wake-banner-button-link": "",
         "wake-banner-description": "Enhance your wakesurfing with essential gear: premium fins for agility, specialized wakesurf ropes for safety, and protective board bags for easy transport. Elevate your ride with these must-have accessories."
       }
+    },
+    "wake_featured_bnner_BtECQG": {
+      "type": "wake-featured-bnner",
+      "settings": {
+        "wake-banner-img": "shopify://shop_images/shop_wakefoils.webp",
+        "wake-banner-heading": "FOILS",
+        "wake-banner-button": "SHOP FOILS",
+        "wake-banner-button-link": "",
+        "wake-banner-description": "Gear up with hydrofoils for cutting-edge glide. Includes stabilizers for balance, mast options for depth control, and protective cases for safe storage."
+      }
     }
   },
   "order": [
     "wake_featured_bnner_RWxqet",
-    "wake_featured_bnner_QEqtjt"
+    "wake_featured_bnner_QEqtjt",
+    "wake_featured_bnner_BtECQG"
   ]
 }
