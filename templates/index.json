@@ -67,6 +67,8 @@
       "settings": {
         "wake-banner-img": "shopify://shop_images/shop_wakeboards.webp",
         "wake-banner-heading": "WAKEBOARDS",
+        "wake-banner-button": "SHOP WAKEBOARDS",
+        "wake-banner-button-link": "",
         "wake-banner-description": "Dive into wakeboarding with top brands like Hyperlite, Ronix, and Liquid Force.. Our large selection of products includes everything for beginners to pros. From quality boards to essential gear like bindings, ropes, handles and accessories."
       }
     }
