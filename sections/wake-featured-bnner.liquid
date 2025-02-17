@@ -4,9 +4,9 @@
       <img src="{{ section.settings.wake-banner-img | image_url: master  }}" alt="Shop Wakeboards">
     </div>
     <div class="header-content">
-      <h2 class="mb-4 mb-sm-3 mb-lg-5">WAKEBOARDS</h2>
+      <h2 class="mb-4 mb-sm-3 mb-lg-5">{{ section.settings.wake-banner-heading }}</h2>
       <p class="mb-4 mb-sm-3 mb-lg-5 header-btn">
-        <a href="/product/category/Wakeboards">{{ section.settings.wake-banner-heading }}</a>
+        <a href="{{ section.settings.wake-banner-button-link }}">{{ section.settings.wake-banner-button }}</a>
       </p>
       <p class="text-center header-text">{{ section.settings.wake-banner-description }}</p>
     </div>
