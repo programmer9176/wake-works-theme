@@ -28,6 +28,7 @@
     font-style: italic;
     color: white;
     letter-spacing: 1px;
+    font-size: 40px;
 }
 
 .header-content a {
@@ -38,8 +39,12 @@
     border: 2px solid #fff;
     border-radius: 50px;
     font-weight: 600;
+    display: inline-block;
+    font-size: 15px;
 }
 
 .header-text {
     width: 70%;
+    font-size: 16px;
+    font-weight: 400;
 }
