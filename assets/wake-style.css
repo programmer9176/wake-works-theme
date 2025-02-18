@@ -66,7 +66,6 @@
   color: black;
   font-size: 40px;
   text-align: center;
-  font-family: "Montserrat", serif;
   line-height: normal;
   font-weight: 700;
   padding: 50px;
@@ -94,7 +93,6 @@
   color: white;
   font-size: 40px;
   text-align: center;
-  font-family: "Montserrat", serif;
   line-height: normal;
   font-weight: 600;
 }
@@ -104,7 +102,6 @@
   text-align: center;
   color: white;
   margin-bottom: 0;
-  font-family: "Montserrat", serif;
   line-height: 24px;
   font-weight: 400;
   transition: all 0.5s;
