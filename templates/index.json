@@ -41,7 +41,18 @@
     },
     "wake_featured_product_mgUbnD": {
       "type": "wake-featured-product",
-      "settings": {}
+      "settings": {
+        "main-featured-heading": "SHOP BY CATEGORY",
+        "featured-product-img-1": "shopify://shop_images/featured-img-1_4444b815-19d9-4a47-9d74-4e2a0077510b.png",
+        "featured-product-heading-1": "GEAR",
+        "featured-product-description-1": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
+        "featured-product-heading-2": "GEAR",
+        "featured-product-description-2": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
+        "featured-product-heading-3": "GEAR",
+        "featured-product-description-3": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
+        "featured-product-heading-4": "GEAR",
+        "featured-product-description-4": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials."
+      }
     }
   },
   "order": [
