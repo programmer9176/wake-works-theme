@@ -38,11 +38,16 @@
         "wake-banner-button-link": "",
         "wake-banner-description": "Gear up with hydrofoils for cutting-edge glide. Includes stabilizers for balance, mast options for depth control, and protective cases for safe storage."
       }
+    },
+    "wake_featured_product_mgUbnD": {
+      "type": "wake-featured-product",
+      "settings": {}
     }
   },
   "order": [
     "wake_featured_bnner_RWxqet",
     "wake_featured_bnner_QEqtjt",
-    "wake_featured_bnner_BtECQG"
+    "wake_featured_bnner_BtECQG",
+    "wake_featured_product_mgUbnD"
   ]
 }
