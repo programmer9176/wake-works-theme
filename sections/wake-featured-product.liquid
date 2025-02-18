@@ -1,66 +1,66 @@
-
 <section class="wake-product-featured-sec">
-    <div class="product-featured-heading">
-        <h3>SHOP BY CATEGORY</h3>
+  <div class="product-featured-heading">
+    <h3>{{ section.settings['main-featured-heading'] }}</h3>
+  </div>
+
+  <div class="product-featured-box">
+    <div class="product-featured-card">
+      <a href="">
+        <div class="product-featured-card-img">
+          <img src="{{ section.settings.featured-product-img-1 |  image_url: 'master'  }}" alt="">
+        </div>
+
+        <div class="product-featured-card-content">
+          <h5>{{ section.settings['featured-product-heading-1'] }}</h5>
+          <p class="product-featured-card-description">{{ section.settings['featured-product-description-1'] }}</p>
+        </div>
+
+      </a>
     </div>
 
-    <div class="product-featured-box">
-        <div class="product-featured-card">
-            <a href="">
-                <div class="product-featured-card-img">
-                    <img src="https://buywakeworks.com/assets/images/Featured-imgs/featured-img-1.png" alt="">
-                </div>
-
-                <div class="product-featured-card-content">
-                    <h5>GEAR</h5>
-                    <p class="product-featured-card-description">Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.</p>
-                </div>
-
-            </a>
+    <div class="product-featured-card">
+      <a href="">
+        <div class="product-featured-card-img">
+          <img src="{{ section.settings.featured-product-img-2 |  image_url: 'master'  }}" alt="">
         </div>
 
-        <div class="product-featured-card">
-            <a href="">
-                <div class="product-featured-card-img">
-                    <img src="https://buywakeworks.com/assets/images/Featured-imgs/featured-img-1.png" alt="">
-                </div>
-
-                <div class="product-featured-card-content">
-                    <h5>GEAR</h5>
-                    <p class="product-featured-card-description">Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.</p>
-                </div>
-
-            </a>
+        <div class="product-featured-card-content">
+          <h5>{{ section.settings['featured-product-heading-2'] }}</h5>
+          <p class="product-featured-card-description">{{ section.settings['featured-product-description-2'] }}</p>
         </div>
 
-        <div class="product-featured-card">
-            <a href="">
-                <div class="product-featured-card-img">
-                    <img src="https://buywakeworks.com/assets/images/Featured-imgs/featured-img-1.png" alt="">
-                </div>
-
-                <div class="product-featured-card-content">
-                    <h5>GEAR</h5>
-                    <p class="product-featured-card-description">Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.</p>
-                </div>
-
-            </a>
-        </div>
-
-        <div class="product-featured-card">
-            <a href="">
-                <div class="product-featured-card-img">
-                    <img src="https://buywakeworks.com/assets/images/Featured-imgs/featured-img-1.png" alt="">
-                </div>
-
-                <div class="product-featured-card-content">
-                    <h5>GEAR</h5>
-                    <p class="product-featured-card-description">Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.</p>
-                </div>
-
-            </a>
-        </div>
+      </a>
     </div>
+
+    <div class="product-featured-card">
+      <a href="">
+        <div class="product-featured-card-img">
+          <img src="{{ section.settings.featured-product-img-3 |  image_url: 'master'  }}" alt="">
+        </div>
+
+        <div class="product-featured-card-content">
+          <h5>{{ section.settings['featured-product-heading-3'] }}</h5>
+          <p class="product-featured-card-description">{{ section.settings['featured-product-description-3'] }}</p>
+        </div>
+
+      </a>
+    </div>
+
+    <div class="product-featured-card">
+      <a href="">
+        <div class="product-featured-card-img">
+          <img src="{{ section.settings.featured-product-img-4 |  image_url: 'master'  }}" alt="">
+        </div>
+
+        <div class="product-featured-card-content">
+          <h5>{{ section.settings['featured-product-heading-4'] }}</h5>
+          <p class="product-featured-card-description">{{ section.settings['featured-product-description-4'] }}</p>
+        </div>
+
+      </a>
+    </div>
+
+  </div>
 
 </section>
 
@@ -68,11 +68,77 @@
 {% schema %}
   {
     "name": "Wake Featured Product",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "main-featured-heading",
+        "label": "Main Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "featured-product-img-1",
+        "label": "Featured Image"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-heading-1",
+        "label": "Featured Card Heading"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-description-1",
+        "label": "Featured Card Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "featured-product-img-2",
+        "label": "Featured Image"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-heading-2",
+        "label": "Featured Card Heading"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-description-2",
+        "label": "Featured Card Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "featured-product-img-3",
+        "label": "Featured Image"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-heading-3",
+        "label": "Featured Card Heading"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-description-3",
+        "label": "Featured Card Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "featured-product-img-4",
+        "label": "Featured Image"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-heading-4",
+        "label": "Featured Card Heading"
+      },
+      {
+        "type": "text",
+        "id": "featured-product-description-4",
+        "label": "Featured Card Description"
+      }
+    ],
     "presets": [
       {
         "name": "Wake Featured Product"
-}
+      }
     ]
   }
 {% endschema %}
