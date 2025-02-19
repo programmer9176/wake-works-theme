@@ -182,7 +182,9 @@
   font-weight: 700;
   color: #00adef;
 }
-
+.product-carousel-content {
+  margin: 20px 0;
+}
 /* logo css start here */
 
 .logo-sec {
