@@ -1,47 +1,43 @@
-
-
 <section class="product-carousel-sec">
+  <div class="product-carousel-title">
+    <h3>CLOSEOUT SALE</h3>
+  </div>
+  <div class="owl-carousel product-carousel owl-theme">
+    <div class="item">
+      <div class="product-carousel-img">
+        <img src="https://i.ibb.co/p2LcfsW/wakesurf-boards-blade-46-01.jpg" alt="">
+      </div>
+      <div class="product-carousel-content">
+        <h3 class="product-title">4 Majic Karpet w/</h3>
+        <h6 class="product-old-price">$869.99</h6>
+        <h6 class="product-price">$869.99</h6>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="product-carousel-title">
-                <h3>CLOSEOUT SALE</h3>
-            </div>
-            <div class="owl-carousel product-carousel owl-theme">
-                <div class="item">
-                    <div class="product-carousel-img">
-                        <img src="https://i.ibb.co/p2LcfsW/wakesurf-boards-blade-46-01.jpg" alt="">
-                    </div>
-                    <div class="product-carousel-content">
-                        <h3 class="product-title">4 Majic Karpet w/</h3>
-                        <h6 class="product-old-price">$869.99</h6>
-                        <h6 class="product-price">$869.99</h6>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <script>
-          $('.product-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        })
-        </script>
+<script>
+    $('.product-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:3
+          }
+      }
+  })
+</script>
 
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Wake Product slider",
     "settings": [
     ],
     "presets": [
