@@ -59,7 +59,12 @@
     },
     "wake_product_slider_E6LnxL": {
       "type": "wake-product-slider",
-      "settings": {}
+      "settings": {
+        "product-main-title": "CLOSEOUT SALE",
+        "product-title": "",
+        "product-old-price": "",
+        "product-price": ""
+      }
     },
     "wake_product_logo_mG77RR": {
       "type": "wake-product-logo",
