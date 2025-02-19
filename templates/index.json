@@ -61,6 +61,7 @@
       "type": "wake-product-slider",
       "settings": {
         "product-main-title": "CLOSEOUT SALE",
+        "product-img": "shopify://shop_images/wakesurf-boards-blade.jpg",
         "product-title": "Liquid Force Blade 46\" Skim Board",
         "product-old-price": "799.99",
         "product-price": "500"
