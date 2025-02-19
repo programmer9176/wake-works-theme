@@ -78,10 +78,20 @@
             "product_old_price": "5000",
             "product_price": "4000"
           }
+        },
+        "product_c8pd9X": {
+          "type": "product",
+          "settings": {
+            "product_img": "shopify://shop_images/JACKET_51186686-94ce-4392-bed3-8d33e8e6f1a1.jpg",
+            "product_title": "Fantasitic Jacket",
+            "product_old_price": "6000",
+            "product_price": "4500"
+          }
         }
       },
       "block_order": [
-        "product_NY9MCH"
+        "product_NY9MCH",
+        "product_c8pd9X"
       ],
       "settings": {
         "product_main_title": "CLOSEOUT SALE"
