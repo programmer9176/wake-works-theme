@@ -56,12 +56,17 @@
         "featured-product-heading-4": "GEAR",
         "featured-product-description-4": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials."
       }
+    },
+    "wake_product_slider_E6LnxL": {
+      "type": "wake-product-slider",
+      "settings": {}
     }
   },
   "order": [
     "wake_featured_bnner_RWxqet",
     "wake_featured_bnner_QEqtjt",
     "wake_featured_bnner_BtECQG",
-    "wake_featured_product_mgUbnD"
+    "wake_featured_product_mgUbnD",
+    "wake_product_slider_E6LnxL"
   ]
 }
