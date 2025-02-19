@@ -57,16 +57,6 @@
         "featured-product-description-4": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials."
       }
     },
-    "wake_product_slider_E6LnxL": {
-      "type": "wake-product-slider",
-      "settings": {
-        "product-main-title": "CLOSEOUT SALE",
-        "product-img": "shopify://shop_images/wakesurf-boards-blade.jpg",
-        "product-title": "Liquid Force Blade 46\" Skim Board",
-        "product-old-price": "799.99",
-        "product-price": "500"
-      }
-    },
     "wake_product_logo_mG77RR": {
       "type": "wake-product-logo",
       "settings": {
@@ -76,46 +66,6 @@
         "product-logo-4": "shopify://shop_images/logo-4.png",
         "product-logo-5": "shopify://shop_images/logo-5.png"
       }
-    },
-    "collection_list_M77jN6": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_ihUNgV": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_qd3Vg8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_GzxfDV": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_ihUNgV",
-        "featured_collection_qd3Vg8",
-        "featured_collection_GzxfDV"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -123,8 +73,6 @@
     "wake_featured_bnner_QEqtjt",
     "wake_featured_bnner_BtECQG",
     "wake_featured_product_mgUbnD",
-    "wake_product_slider_E6LnxL",
-    "wake_product_logo_mG77RR",
-    "collection_list_M77jN6"
+    "wake_product_logo_mG77RR"
   ]
 }
