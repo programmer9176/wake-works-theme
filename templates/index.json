@@ -60,6 +60,10 @@
     "wake_product_slider_E6LnxL": {
       "type": "wake-product-slider",
       "settings": {}
+    },
+    "wake_product_logo_mG77RR": {
+      "type": "wake-product-logo",
+      "settings": {}
     }
   },
   "order": [
@@ -67,6 +71,7 @@
     "wake_featured_bnner_QEqtjt",
     "wake_featured_bnner_BtECQG",
     "wake_featured_product_mgUbnD",
-    "wake_product_slider_E6LnxL"
+    "wake_product_slider_E6LnxL",
+    "wake_product_logo_mG77RR"
   ]
 }
