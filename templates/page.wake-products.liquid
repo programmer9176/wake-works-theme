@@ -6,7 +6,9 @@
   <div class="row">
     {% for product in collections.all.products %}
       <div class="col-md-4">
-        
+          <div class="product-img">
+              <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          </div
       </div
 
         {% endfor %}
