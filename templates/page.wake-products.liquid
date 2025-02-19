@@ -2,6 +2,18 @@
 
 <h1>Our Wake Products</h1>
 
+<div class="container-fluid">
+  <div class="row">
+    {% for product in collections.all.products %}
+      <div class="col-md-4">
+        
+      </div
+
+        {% endfor %}
+  </div>
+</div>
+
+
 <div class="products-grid">
   {% for product in collections.all.products %}
     <div class="product-card">
