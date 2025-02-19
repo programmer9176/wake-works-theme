@@ -3,22 +3,23 @@
     <h3>{{ section.settings['product-main-title'] }}</h3>
   </div>
   <div class="owl-carousel product-carousel owl-theme">
-    {% for block in section.blocks %}
-      <div class="item">
-        <div class="product-carousel-img">
-          {% if block.settings.product_img %}
-            <img src="{{ block.settings.product_img | image_url: 'master' }}" alt="{{ block.settings.product_title }}">
-          {% else %}
-            <p>No image found</p>
-          {% endif %}
-        </div>
-        <div class="product-carousel-content">
-          <h3 class="product-title">{{ block.settings.product_title }}</h3>
-          <h6 class="product-old-price">${{ block.settings.product_old_price }}</h6>
-          <h6 class="product-price">${{ block.settings.product_price }}</h6>
-        </div>
+    <div class="item">
+      <div class="product-carousel-img">
+        {% if section.settings['product-img'] %}
+          <img
+            src="{{ section.settings.product-img | image_url: master }}"
+            alt="{{ section.settings['product-title'] }}"
+          >
+        {% else %}
+          <p>No image found</p>
+        {% endif %}
       </div>
-    {% endfor %}
+      <div class="product-carousel-content">
+        <h3 class="product-title">{{ section.settings['product-title'] }}</h3>
+        <h6 class="product-old-price">${{ section.settings['product-old-price'] }}</h6>
+        <h6 class="product-price">${{ section.settings['product-price'] }}</h6>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -43,40 +44,31 @@
       "type": "text",
       "id": "product-main-title",
       "label": "Product Section Title"
-    }
-  ],
-  "blocks": [
+    },
     {
-      "type": "product",
-      "name": "Product Slider Item",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "product_img",
-          "label": "Product Image"
-        },
-        {
-          "type": "text",
-          "id": "product_title",
-          "label": "Product Title"
-        },
-        {
-          "type": "text",
-          "id": "product_old_price",
-          "label": "Product Old Price"
-        },
-        {
-          "type": "text",
-          "id": "product_price",
-          "label": "Product Price"
-        }
-      ]
+      "type": "image_picker",
+      "id": "product-img",
+      "label": "Product Image"
+    },
+    {
+      "type": "text",
+      "id": "product-title",
+      "label": "Product Title"
+    },
+    {
+      "type": "text",
+      "id": "product-old-price",
+      "label": "Product Old Price"
+    },
+    {
+      "type": "text",
+      "id": "product-price",
+      "label": "Product Price"
     }
   ],
   "presets": [
     {
-      "name": "Wake Product slider",
-      "category": "Custom"
+      "name": "Wake Product slider"
     }
   ]
 }
