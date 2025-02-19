@@ -1,0 +1,14 @@
+{% comment %} Wake Products Custom Template {% endcomment %}
+
+<h1>Our Wake Products</h1>
+
+<div class="products-grid">
+  {% for product in collections.all.products %}
+    <div class="product-card">
+      <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+      <h2>{{ product.title }}</h2>
+      <p>{{ product.price | money }}</p>
+      <a href="{{ product.url }}" class="btn">View Product</a>
+    </div>
+  {% endfor %}
+</div>
