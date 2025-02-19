@@ -10,6 +10,7 @@
             src="{{ section.settings.product-img | image_url: 'master' }}"
             alt="{{ section.settings['product-title'] }}"
           >
+          <img src="{{ section.settings.featured-product-img-1 |  image_url: master  }}" alt="">
         {% else %}
           <p>No image found</p>
         {% endif %}
