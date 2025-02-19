@@ -7,7 +7,7 @@
       <div class="item">
         <div class="product-carousel-img">
           {% if block.settings.product_img %}
-            <img src="{{ block.settings.product_img | image_url: 'master' }}" alt="{{ block.settings.product_title }}">
+            <img src="{{ block.settings.product_img | image_url: master }}" alt="{{ block.settings.product_title }}">
           {% else %}
             <p>No image found</p>
           {% endif %}
