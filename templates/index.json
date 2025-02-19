@@ -69,7 +69,13 @@
     },
     "wake_product_logo_mG77RR": {
       "type": "wake-product-logo",
-      "settings": {}
+      "settings": {
+        "product-logo-1": "shopify://shop_images/phase5_logo.webp",
+        "product-logo-2": "shopify://shop_images/logo-2.webp",
+        "product-logo-3": "shopify://shop_images/logo-3.png",
+        "product-logo-4": "shopify://shop_images/logo-4.png",
+        "product-logo-5": "shopify://shop_images/logo-5.png"
+      }
     },
     "collection_list_M77jN6": {
       "type": "collection-list",
