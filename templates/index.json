@@ -69,6 +69,20 @@
     },
     "wake_product_slider_RWAx8k": {
       "type": "wake-product-slider",
+      "blocks": {
+        "product_NY9MCH": {
+          "type": "product",
+          "settings": {
+            "product_img": "shopify://shop_images/wakesurf-boards-blade.jpg",
+            "product_title": "Liquid Force Blade 46\" Skim Board",
+            "product_old_price": "5000",
+            "product_price": "4000"
+          }
+        }
+      },
+      "block_order": [
+        "product_NY9MCH"
+      ],
       "settings": {
         "product_main_title": "fmdlgdklf"
       }
