@@ -5,7 +5,14 @@
   <div class="owl-carousel product-carousel owl-theme">
     <div class="item">
       <div class="product-carousel-img">
-        <img src="{{ section.settings.product-img| image_url: 'master' }}" alt="{{ product.title }}">
+        {% if section.settings['product-img'] %}
+          <img
+            src="{{ section.settings.product-img | image_url: 'master' }}"
+            alt="{{ section.settings.product-title }}"
+          >
+        {% else %}
+          <p>No image found</p>
+        {% endif %}
       </div>
       <div class="product-carousel-content">
         <h3 class="product-title">{{ section.settings['product-title'] }}</h3>
@@ -17,58 +24,52 @@
 </section>
 
 <script>
-    $('.product-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:2
-          },
-          1000:{
-              items:3
-          }
-      }
-  })
+  $('.product-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
 </script>
 
 {% schema %}
-  {
-    "name": "Wake Product slider",
-    "settings": [
-      {
-        "type": "text",
-        "id": "product-main-title",
-        "label": "Product Section Title"
-      },
-      {
-        "type": "image_picker",
-        "id": "product-img",
-        "label": "Product image"
-      },
-      {
-        "type": "text",
-        "id": "product-title",
-        "label": "Product Title"
-      },
-      {
-        "type": "text",
-        "id": "product-old-price",
-        "label": "Product Old Price"
-      },
-      {
-        "type": "text",
-        "id": "product-price",
-        "label": "Product Price"
-      },
-    ],
-    "presets": [
-      {
-        "name": "Wake Product slider"
+{
+  "name": "Wake Product slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "product-main-title",
+      "label": "Product Section Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "product-img",
+      "label": "Product Image"
+    },
+    {
+      "type": "text",
+      "id": "product-title",
+      "label": "Product Title"
+    },
+    {
+      "type": "text",
+      "id": "product-old-price",
+      "label": "Product Old Price"
+    },
+    {
+      "type": "text",
+      "id": "product-price",
+      "label": "Product Price"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wake Product slider"
+    }
+  ]
 }
-    ]
-  }
 {% endschema %}
