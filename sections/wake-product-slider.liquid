@@ -7,8 +7,8 @@
       <div class="product-carousel-img">
         {% if section.settings['product-img'] %}
           <img
-            src="{{ section.settings.product-img | image_url: 'master' }}"
-            alt="{{ section.settings.product-title }}"
+            src="{{ section.settings['product-img'] | image_url: 'master' }}"
+            alt="{{ section.settings['product-title'] }}"
           >
         {% else %}
           <p>No image found</p>
