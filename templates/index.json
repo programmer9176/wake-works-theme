@@ -66,6 +66,12 @@
         "product-logo-4": "shopify://shop_images/logo-4.png",
         "product-logo-5": "shopify://shop_images/logo-5.png"
       }
+    },
+    "wake_product_slider_RWAx8k": {
+      "type": "wake-product-slider",
+      "settings": {
+        "product_main_title": "fmdlgdklf"
+      }
     }
   },
   "order": [
@@ -73,6 +79,7 @@
     "wake_featured_bnner_QEqtjt",
     "wake_featured_bnner_BtECQG",
     "wake_featured_product_mgUbnD",
-    "wake_product_logo_mG77RR"
+    "wake_product_logo_mG77RR",
+    "wake_product_slider_RWAx8k"
   ]
 }
