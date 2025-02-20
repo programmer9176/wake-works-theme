@@ -86,7 +86,7 @@ $(document).ready(function () {
     method: "GET",
     dataType: "json",
     success: function (data) {
-      console.log("Products received:", data);
+      var ProductReuslt = data;
     },
     error: function (error) {
       console.log("Error fetching products:", error);
