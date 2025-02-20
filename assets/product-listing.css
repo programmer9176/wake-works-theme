@@ -291,4 +291,32 @@
 .new_one {
   display: block !important;
 }
+
+@media screen and (max-width: 991px) {
+  /* boats page css start here */
+  .main-inventory-heading {
+    margin: 60px 0 30px 0;
+  }
+
+  .top_new_filter {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    display: block;
+  }
+  .left_sidebar {
+    padding: 15px 25px;
+  }
+  .custom-card-header span.fa {
+    display: none;
+  }
+  .custom-card-header i.fa {
+    display: block;
+  }
+  .custom-card-header p.fa {
+    display: none;
+  }
+  .main-inventory-heading {
+    font-size: 30px;
+  }
+}
 /* css for boat listing page ends here */
