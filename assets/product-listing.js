@@ -87,6 +87,7 @@ $(document).ready(function () {
     dataType: "json",
     success: function (data) {
       var ProductReuslt = data.reuslt.ImageURL;
+      console.log("Abdullah", ProductReuslt);
     },
     error: function (error) {
       console.log("Error fetching products:", error);
