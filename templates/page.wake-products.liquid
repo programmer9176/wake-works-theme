@@ -424,7 +424,9 @@
 <!-- Boat listing page content ends here -->
 
 <script>
-    $('.card-header').click(function(){
+  $(document).ready(fuction(){
+
+        $('.card-header').click(function(){
   	if($(this).find("span").hasClass("fa-angle-up")){
           $(this).find("span").removeClass("fa-angle-up").addClass("fa-angle-down");
           $(this).next(".card-content").removeClass("show");
@@ -475,4 +477,6 @@
         $(card_id).find(".mobile_change").addClass("content-show");
 
     })
+
+  })
 </script>
