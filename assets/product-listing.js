@@ -6,15 +6,30 @@
     });
 
     $(document).ready(function() {
-      $('.custom-card-header').click(function(){
-          if($(this).find("span").hasClass("fa-angle-up")){
-              $(this).find("span").removeClass("fa-angle-up").addClass("fa-angle-down");
-              $(this).next(".card-content").removeClass("show");
-          } else if($(this).find("span").hasClass("fa-angle-down")){
-              $(this).find("span").removeClass("fa-angle-down").addClass("fa-angle-up");
-              $(this).next(".card-content").addClass("show");
-          }
-      });
+
+      // boats page filter accordion
+
+$(document).ready(function(){
+    $('.custom-card-header').click(function(){
+               
+        if ($(this).find("span.fa").hasClass("fa-plus") || $(this).find("i.fa").hasClass("fa-angle-down")) {
+            $(".custom-boat-accordion").find(".content-show").removeClass("content-show");
+            $(".custom-boat-accordion").find(".fa-minus").removeClass("fa-minus").addClass("fa-plus")
+            $(".custom-accordion").find(".fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down")
+
+            $(this).find("span.fa").removeClass("fa-plus").addClass("fa-minus");
+            $(this).find("i.fa").removeClass("fa-angle-down").addClass("fa-angle-up");
+            $(this).next(".card-content").addClass("content-show")
+
+        } else if ($(this).find("span.fa").hasClass("fa-minus") || $(this).find("i.fa").hasClass("fa-angle-up")) {
+            
+            $(this).find("span.fa").removeClass("fa-minus").addClass("fa-plus");
+            $(this).find("i.fa").removeClass("fa-angle-up").addClass("fa-angle-down");
+            $(this).next(".card-content").removeClass("content-show")
+        }
+    });
+});
+
 
       $('.filter_btn').click(function(){
           $('.new_768').addClass('new_one');
