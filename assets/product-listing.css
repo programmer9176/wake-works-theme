@@ -1,0 +1,306 @@
+.inventory-heading {
+  color: #777;
+  font-family: "AnekOdia-Bold";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 200% */
+  letter-spacing: 3px;
+}
+.boat-card-image {
+  position: relative;
+  padding-top: 66.3%;
+}
+.vacation-rentals-image {
+  position: relative;
+  padding-top: 57%;
+}
+.vacation-rentals-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vacation-card-title {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins-Extrabold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+.boat-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.boat-title h5 a {
+  color: #000;
+  font-family: "Poppins-Extrabold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.boat-title h5 a {
+  text-decoration: none;
+  color: #000;
+}
+.payment-sec p {
+  color: #05668d;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+.custom-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+  border-bottom: 2px solid #181c26;
+  margin: 20px 0px 0px 0px;
+  cursor: pointer;
+}
+.custom-card-header i.fa {
+  display: none;
+}
+.custom-card-header span.fa {
+  display: block;
+  color: #fa30bc;
+  font-weight: bold;
+}
+.card-content {
+  display: none;
+  padding: 15px 0;
+}
+.custom-card-header h2 {
+  color: #000;
+  font-family: "Poppins-Extrabold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.filter-search-box {
+  border: none !important;
+}
+.filter-search-box:focus {
+  box-shadow: none;
+  outline: none;
+}
+.custom-search-view ul {
+  padding-left: 0;
+}
+.custom-search-view ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.custom-search-view ul .closX {
+  cursor: pointer;
+}
+.rotate180deg {
+  transform: rotate(180deg);
+}
+.no-border {
+  border: none;
+}
+.custom-body {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.content-show {
+  display: block !important;
+}
+.boat-inventory-cond-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+.boat-inventory-cond-list .cond-list-item {
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+  color: #696969;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+.cond-list-item + .cond-list-item::after {
+  position: absolute;
+  content: "";
+  background-color: #1e1e1e;
+  top: 12px;
+  left: -15px;
+  transform: translateY(0);
+  width: 1px;
+  height: 12px;
+}
+
+.main-inventory-heading {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins-Extrabold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 4px;
+  margin: 80px 0 30px 0;
+}
+.boat-seprator {
+  border-left: 1px solid #f0f0f0;
+}
+/* filter  */
+.youSearchList li span strong {
+  color: #000;
+  font-family: "Poppins-Extrabold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.youSearchList li span {
+  color: #000;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.left_tabs {
+  padding-left: 62px;
+  padding-right: 62px;
+}
+.inner_wrap_filter {
+  display: flex;
+  align-items: center;
+}
+.inner_wrap_filter a {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins-Regular";
+}
+.inner_wrap_filter a:focus {
+  outline: none;
+  box-shadow: none;
+}
+.inner_wrap_filter .left_btn {
+  border-right: 1px solid #d3d3d3;
+  padding: 11px 8px;
+}
+
+.top_new_filter {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  display: none;
+}
+.inner_wrap_filter .right_bt {
+  padding: 8px 3px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  overflow-x: auto;
+}
+.top_new_filter .inner_wrap_bt {
+  border: 1px solid #1d1c1c;
+  border-radius: 30px;
+}
+.top_new_filter .inner_wrap_bt a {
+  padding: 7px 10px;
+  display: inline-block;
+  min-width: 190px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins-Regular";
+}
+.top_des_fil .close_btn {
+  display: none;
+}
+.new_768 .close_btn {
+  display: block;
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid #dfdfdf;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.sqr-checkBox label input {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.sqr-checkBox label span {
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  cursor: pointer;
+}
+.new_768 .close_btn a {
+  color: #707070;
+  font-size: 14px;
+}
+.new_768 {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background-color: #fff;
+  max-width: 550px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: none !important;
+}
+.sqr-checkBox {
+  padding: 5px 0px;
+}
+.card-header span {
+  display: none !important;
+}
+.card-header .fa-angle-down {
+  display: none !important;
+}
+.card-header .fa-angle-up {
+  display: none !important;
+}
+.new_one {
+  display: block !important;
+}
+/* css for boat listing page ends here */
