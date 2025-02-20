@@ -87,7 +87,7 @@ $(document).ready(function () {
     dataType: "json",
     success: function (data) {
       var ProductReuslt = data;
-      console.log("Abdullah", ProductReuslt[0].id);
+      console.log("Abdullah", Product.Reuslt);
     },
     error: function (error) {
       console.log("Error fetching products:", error);
