@@ -6,7 +6,7 @@
     });
 
     $(document).ready(function() {
-      $('.card-header').click(function(){
+      $('.custom-card-header').click(function(){
           if($(this).find("span").hasClass("fa-angle-up")){
               $(this).find("span").removeClass("fa-angle-up").addClass("fa-angle-down");
               $(this).next(".card-content").removeClass("show");
