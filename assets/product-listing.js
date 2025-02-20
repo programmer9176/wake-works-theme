@@ -86,16 +86,7 @@ $(document).ready(function () {
     method: "GET",
     dataType: "json",
     success: function (data) {
-      // $.each(data, function(index, product) {
-      //   var productHtml = '<div class="product">' +
-      //                       '<h2>' + product.title + '</h2>' +
-      //                       '<img src="' + product.image + '" alt="' + product.title + '">' +
-      //                       '<p>' + product.description + '</p>' +
-      //                     '</div>';
-      //   $("#product-container").append(productHtml);
-      // });
-
-      console.log(data);
+      console.log("Products received:", data);
     },
     error: function (error) {
       console.log("Error fetching products:", error);
