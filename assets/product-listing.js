@@ -86,7 +86,7 @@ $(document).ready(function () {
     method: "GET",
     dataType: "json",
     success: function (data) {
-      var ProductReuslt = data.reuslt.ImageURL;
+      var ProductReuslt = data;
       console.log("Abdullah", ProductReuslt);
     },
     error: function (error) {
