@@ -26,7 +26,6 @@
 .vacation-card-title {
   color: #000;
   text-align: center;
-  font-family: "Poppins-Extrabold";
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -43,7 +42,6 @@
 }
 .boat-title h5 a {
   color: #000;
-  font-family: "Poppins-Extrabold";
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -57,7 +55,6 @@
 }
 .payment-sec p {
   color: #05668d;
-  font-family: "Poppins-Regular";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -88,7 +85,6 @@
 }
 .custom-card-header h2 {
   color: #000;
-  font-family: "Poppins-Extrabold";
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -143,7 +139,6 @@
   position: relative;
   padding-right: 30px;
   color: #696969;
-  font-family: "Poppins-Regular";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -165,7 +160,6 @@
 .main-inventory-heading {
   color: #000;
   text-align: center;
-  font-family: "Poppins-Extrabold";
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
@@ -179,7 +173,6 @@
 /* filter  */
 .youSearchList li span strong {
   color: #000;
-  font-family: "Poppins-Extrabold";
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -188,7 +181,6 @@
 }
 .youSearchList li span {
   color: #000;
-  font-family: "Poppins-Regular";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -210,7 +202,6 @@
   align-items: center;
   width: 100px;
   text-transform: uppercase;
-  font-family: "Poppins-Regular";
 }
 .inner_wrap_filter a:focus {
   outline: none;
@@ -244,7 +235,6 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Poppins-Regular";
 }
 .top_des_fil .close_btn {
   display: none;
@@ -264,7 +254,6 @@
   cursor: pointer;
 }
 .sqr-checkBox label span {
-  font-family: "Poppins-Regular";
   font-size: 16px;
   cursor: pointer;
 }
