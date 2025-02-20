@@ -85,7 +85,6 @@ $(document).ready(function () {
     url: "https://buywakeworks.com/get-products-db",
     method: "GET",
     dataType: "json",
-    mode: "no-cors",
     success: function (data) {
       console.log("Products received:", data);
     },
