@@ -1,21 +1,404 @@
 {% comment %} Wake Products Custom Template {% endcomment %}
 
-<h1>Our Wake Products</h1>
+<!-- Boat listing page content starts here -->
+
+<section>
+  <div class="top_new_filter">
+    <div class="inner_wrap_filter">
+      <div class="left_btn">
+        <a class="btn filter_btn" href="javascript:void()" data-direction="bottom"
+          >Filters <span><i class="fa fa-angle-down" aria-hidden="true"></i></span
+        ></a>
+      </div>
+      <div class="right_bt">
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="sortby">SORT BY<span></span></a>
+        </div>
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="status">STATUS<span></span></a>
+        </div>
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="make">MAKE <span></span></a>
+        </div>
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="category"> category <span></span></a>
+        </div>
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="model"> model <span></span></a>
+        </div>
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="year"> year <span></span></a>
+        </div>
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="length">LENGTH<span></span></a>
+        </div>
+        <div class="inner_wrap_bt">
+          <a href="javascript:void()" class="opeN_clik" title="price">price<span></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <div class="container-fluid">
   <div class="row">
-    {% for product in collections.all.products %}
-      <div class="col-md-3">
-        <div class="product-img">
-          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+    <div class="col-lg-3">
+      <div class="left_tabs top_des_fil new_768">
+        <div class="close_btn">
+          <a class="close_cross" href="javascript:void()">Close</a>
         </div>
 
-        <div class="product-content">
-          <h2>{{ product.title }}</h2>
-          <p>{{ product.price | money }}</p>
-          <a href="{{ product.url }}" class="btn">View Product</a>
+        <div class="left_sidebar mt-lg-4 pt-lg-5">
+          <div class="heading text-center Montserrat_Medium U_case mb-lg-5 custom-search-view">
+            <ul class="youSearchList">
+              <li class="condition_selected_filters" id="condition_all_filter">
+                <span style="textTransform:capitalize"><strong>Condition</strong> : All</span
+                ><span onclick="remove_filter('condition_all_filter')" class="pull-right closX" data-id="all">X</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="custom-boat-accordion" id="faq">
+            <div class="csutom-card" id="sortby">
+              <div class="custom-card-header">
+                <h2 class="mb-0">SORT BY</h2>
+                <p class="fa fa-angle-down"></p>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content mobile_change">
+                <div class="custom-card-body">
+                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the.
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card" id="status">
+              <div class="custom-card-header">
+                <h2 class="mb-0">status</h2>
+                <span class="fa fa-plus"></span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content mobile_change">
+                <div id="condition-filter-mob" class="panel-body condition-filter-mob">
+                  <div class="sqr-checkBox">
+                    <label id="condition_New" for="condition_New_checkbox">
+                      <input id="condition_New_checkbox" type="checkbox" class="larger" aria-labelledby="condition_New">
+
+                      <span class="filter_count">New </span>
+                    </label>
+                  </div>
+                  <div class="sqr-checkBox">
+                    <label id="condition_Pre-Owned" for="condition_Pre-Owned_checkbox">
+                      <input
+                        id="condition_Pre-Owned_checkbox"
+                        type="checkbox"
+                        class="larger"
+                        aria-labelledby="condition_Pre-Owned"
+                      >
+
+                      <span class="filter_count">Pre-Owned </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card" id="make">
+              <div class="custom-card-header">
+                <h2 class="mb-0">make</h2>
+                <span class="fa fa-plus"></span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content mobile_change">
+                <div id="condition-filter-mob" class="panel-body condition-filter-mob">
+                  <div class="sqr-checkBox">
+                    <label id="condition_New" for="condition_New_checkbox">
+                      <input id="condition_New_checkbox" type="checkbox" class="larger" aria-labelledby="condition_New">
+
+                      <span class="filter_count">New </span>
+                    </label>
+                  </div>
+                  <div class="sqr-checkBox">
+                    <label id="condition_Pre-Owned" for="condition_Pre-Owned_checkbox">
+                      <input
+                        id="condition_Pre-Owned_checkbox"
+                        type="checkbox"
+                        class="larger"
+                        aria-labelledby="condition_Pre-Owned"
+                      >
+
+                      <span class="filter_count">Pre-Owned </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card" id="category">
+              <div class="custom-card-header">
+                <h2 class="mb-0">category</h2>
+                <span class="fa fa-plus"></span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content mobile_change">
+                <div id="condition-filter-mob" class="panel-body condition-filter-mob">
+                  <div class="sqr-checkBox">
+                    <label id="condition_New" for="condition_New_checkbox">
+                      <input id="condition_New_checkbox" type="checkbox" class="larger" aria-labelledby="condition_New">
+
+                      <span class="filter_count">New </span>
+                    </label>
+                  </div>
+                  <div class="sqr-checkBox">
+                    <label id="condition_Pre-Owned" for="condition_Pre-Owned_checkbox">
+                      <input
+                        id="condition_Pre-Owned_checkbox"
+                        type="checkbox"
+                        class="larger"
+                        aria-labelledby="condition_Pre-Owned"
+                      >
+
+                      <span class="filter_count">Pre-Owned </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card" id="model">
+              <div class="custom-card-header">
+                <h2 class="mb-0">model</h2>
+                <span class="fa fa-plus"></span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content mobile_change">
+                <div id="condition-filter-mob" class="panel-body condition-filter-mob">
+                  <div class="sqr-checkBox">
+                    <label id="condition_New" for="condition_New_checkbox">
+                      <input id="condition_New_checkbox" type="checkbox" class="larger" aria-labelledby="condition_New">
+
+                      <span class="filter_count">New </span>
+                    </label>
+                  </div>
+                  <div class="sqr-checkBox">
+                    <label id="condition_Pre-Owned" for="condition_Pre-Owned_checkbox">
+                      <input
+                        id="condition_Pre-Owned_checkbox"
+                        type="checkbox"
+                        class="larger"
+                        aria-labelledby="condition_Pre-Owned"
+                      >
+
+                      <span class="filter_count">Pre-Owned </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card" id="year">
+              <div class="custom-card-header">
+                <h2 class="mb-0">year</h2>
+                <span class="fa fa-plus"></span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content">
+                <div class="custom-card-body">
+                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the.
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card" id="length">
+              <div class="custom-card-header">
+                <h2 class="mb-0">length</h2>
+                <span class="fa fa-plus"></span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content">
+                <div class="custom-card-body">
+                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the.
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card" id="price">
+              <div class="custom-card-header">
+                <h2 class="mb-0">price</h2>
+                <span class="fa fa-plus"></span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+
+              <div class="card-content">
+                <div class="custom-card-body">
+                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the.
+                </div>
+              </div>
+            </div>
+
+            <div class="csutom-card">
+              <div class="custom-card-header">
+                <input type="text" placeholder="Stock#" class="form-control filter-search-box">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    {% endfor %}
+    </div>
+
+    <div class="col-lg-9 boat-seprator px-3 px-xl-5">
+      <div class="">
+        <h1 class="main-inventory-heading text-center text-lg-left">BOATS FOR SALE</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row my-4">
+            <div class="col-md-6">
+              <div class="card no-border">
+                <div class="boat-card-image">
+                  <a href="javascript:void(0)">
+                    <img src="./assets/images/Boat-listings/boatlistingImage.png" class="boat-img" alt="...">
+                  </a>
+                </div>
+                <div class="card-body custom-body">
+                  <div class="boat-title">
+                    <h5><a href="javascript:void(0)">YEAR MAKE MODEL</a></h5>
+                  </div>
+
+                  <div class="payment-sec">
+                    <p>Call For Price</p>
+                  </div>
+
+                  <div>
+                    <ul class="boat-inventory-cond-list">
+                      <li class="cond-list-item">New</li>
+                      <li class="cond-list-item">17ft.</li>
+                      <li class="cond-list-item">For Sale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card no-border">
+                <div class="boat-card-image">
+                  <a href="javascript:void(0)">
+                    <img src="./assets/images/Boat-listings/boatlistingImage.png" class="boat-img" alt="...">
+                  </a>
+                </div>
+                <div class="card-body custom-body">
+                  <div class="boat-title">
+                    <h5><a href="javascript:void(0)">YEAR MAKE MODEL</a></h5>
+                  </div>
+
+                  <div class="payment-sec">
+                    <p>Call For Price</p>
+                  </div>
+
+                  <div>
+                    <ul class="boat-inventory-cond-list">
+                      <li class="cond-list-item">New</li>
+                      <li class="cond-list-item">17ft.</li>
+                      <li class="cond-list-item">For Sale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card no-border">
+                <div class="boat-card-image">
+                  <a href="javascript:void(0)">
+                    <img src="./assets/images/Boat-listings/boatlistingImage.png" class="boat-img" alt="...">
+                  </a>
+                </div>
+                <div class="card-body custom-body">
+                  <div class="boat-title">
+                    <h5><a href="javascript:void(0)">YEAR MAKE MODEL</a></h5>
+                  </div>
+
+                  <div class="payment-sec">
+                    <p>Call For Price</p>
+                  </div>
+
+                  <div>
+                    <ul class="boat-inventory-cond-list">
+                      <li class="cond-list-item">New</li>
+                      <li class="cond-list-item">17ft.</li>
+                      <li class="cond-list-item">For Sale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card no-border">
+                <div class="boat-card-image">
+                  <a href="javascript:void(0)">
+                    <img src="./assets/images/Boat-listings/boatlistingImage.png" class="boat-img" alt="...">
+                  </a>
+                </div>
+                <div class="card-body custom-body">
+                  <div class="boat-title">
+                    <h5><a href="javascript:void(0)">YEAR MAKE MODEL</a></h5>
+                  </div>
+
+                  <div class="payment-sec">
+                    <p>Call For Price</p>
+                  </div>
+
+                  <div>
+                    <ul class="boat-inventory-cond-list">
+                      <li class="cond-list-item">New</li>
+                      <li class="cond-list-item">17ft.</li>
+                      <li class="cond-list-item">For Sale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card no-border">
+                <div class="boat-card-image">
+                  <a href="javascript:void(0)">
+                    <img src="./assets/images/Boat-listings/boatlistingImage.png" class="boat-img" alt="...">
+                  </a>
+                </div>
+                <div class="card-body custom-body">
+                  <div class="boat-title">
+                    <h5><a href="javascript:void(0)">YEAR MAKE MODEL</a></h5>
+                  </div>
+
+                  <div class="payment-sec">
+                    <p>Call For Price</p>
+                  </div>
+
+                  <div>
+                    <ul class="boat-inventory-cond-list">
+                      <li class="cond-list-item">New</li>
+                      <li class="cond-list-item">17ft.</li>
+                      <li class="cond-list-item">For Sale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- Boat listing page content ends here -->
