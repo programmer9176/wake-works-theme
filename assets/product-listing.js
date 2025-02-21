@@ -1,7 +1,3 @@
-$(".btn-click").on("click", function () {
-  alert("clicking");
-});
-
 $(document).ready(function () {
   // boats page filter accordion
 
@@ -87,7 +83,7 @@ $(document).ready(function () {
     dataType: "json",
     success: function (data) {
       var ProductReuslt = data.result;
-      console.log("Abdullah", ProductReuslt);
+      // console.log("Abdullah", ProductReuslt);
     },
     error: function (error) {
       console.log("Error fetching products:", error);
