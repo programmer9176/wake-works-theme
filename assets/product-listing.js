@@ -76,17 +76,17 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $.ajax({
-    url: "https://buywakeworks.com/get-products-db",
-    method: "GET",
-    dataType: "json",
-    success: function (data) {
-      var ProductReuslt = data.result;
-      // console.log("Abdullah", ProductReuslt);
-    },
-    error: function (error) {
-      console.log("Error fetching products:", error);
-    },
-  });
-});
+// $(document).ready(function () {
+//   $.ajax({
+//     url: "https://buywakeworks.com/get-products-db",
+//     method: "GET",
+//     dataType: "json",
+//     success: function (data) {
+//       var ProductReuslt = data.result;
+//       // console.log("Abdullah", ProductReuslt);
+//     },
+//     error: function (error) {
+//       console.log("Error fetching products:", error);
+//     },
+//   });
+// });
