@@ -1,6 +1,6 @@
 <div class="cart-box">
   {% for variant in product.variants %}
-    <input type="hidden" id="getVariantId" value="{{ variant.id }}}">
+    <input type="hidden" id="getVariantId" value="{{ variant.id }}">
   {% endfor -%}
   <button class="btn btn-success cart-btn w-100" id="card-product-id-{{ product.id }}">Add To Cart</button>
 </div>
