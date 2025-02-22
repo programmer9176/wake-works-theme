@@ -10,7 +10,7 @@
 
     $('#card-product-id-{{ product.id }}').on('click', function(){
 
-      var variantId = $(this).closest('.cart-box').find('#getVariantId').val();
+      var variantId = $(this).parents('.cart-box').find('#getVariantId').val();
         alert(variantId)
     })
 
