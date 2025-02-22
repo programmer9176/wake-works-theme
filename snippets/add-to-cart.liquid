@@ -11,7 +11,12 @@
     $('#card-product-id-{{ product.id }}').on('click', function(){
 
       var variantId = $(this).closest('.cart-box').find('#getVariantId').val();
-        alert(variantId)
+        alert(variantId);
+
+      let formObj = {
+        quantity:1,
+        id: variantId
+      }
     })
 
   })
