@@ -9,7 +9,9 @@
   $(document).ready(function(){
 
     $('#card-product-id-{{ product.id }}').on('click', function(){
-        alert('clicked')
+
+      var variantId = $(this).closest('.cart-box').find('#getVariantId').value
+        alert(variantId)
     })
 
   })
