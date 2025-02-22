@@ -18,18 +18,19 @@
     };
 
       $.ajax({
-        type:"POST",
-        url: "/cart/add.js",
-        cache:false,
-        data:formObj,
-        dataType: "json",
-        success: function(data){
-          console.log('success')
-        },
-        error: function(xhr, ajazOption, thrownError){
-          console.log(error)
-        }
-      })
+      type: "POST",
+      url: "/cart/add.js",
+      cache: false,
+      data: formObj,
+      dataType: "json",
+      success: function (data) {
+        console.log('Success:', data);
+      },
+      error: function (xhr, ajaxOptions, thrownError) {
+        console.log('Error:', thrownError);
+        console.log('Response:', xhr.responseText);
+      }
+    });
 
     })
 
