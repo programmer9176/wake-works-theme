@@ -10,29 +10,27 @@
 
     $('#card-product-id-{{ product.id }}').on('click', function(){
 
-      var variantId = $(this).parents('.cart-box').find('.getVariantId').val();
+      var variantId = $(this).closest('.cart-box').find('#getVariantId').val();
+        alert(variantId);
 
-      console.log(variantId)
-
-    let formObj = {
-      quantity: 1,
-      id: variantId
-    };
+      let formObj = {
+        quantity:1,
+        id: variantId
+      }
 
       $.ajax({
-      type: "POST",
-      url: "/cart/add.js",
-      cache: false,
-      data: formObj,
-      dataType: "json",
-      success: function (data) {
-        console.log('Success:', data);
-      },
-      error: function (xhr, ajaxOptions, thrownError) {
-        console.log('Error:', thrownError);
-        console.log('Response:', xhr.responseText);
-      }
-    });
+        type:"POST",
+        url: "/cart/add.js",
+        cache:false,
+        data:formObj,
+        dataType: "json",
+        success: function(data){
+          console.log('success')
+        },
+        error: function(xhr, ajazOption, thrownError){
+          console.log(error)
+        }
+      })
 
     })
 
