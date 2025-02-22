@@ -17,6 +17,21 @@
         quantity:1,
         id: variantId
       }
+
+      $.ajax({
+        type:"POST",
+        url: "/cart/add.js",
+        cache:false,
+        data:formObj,
+        dataType: "json",
+        success: function(data){
+          console.log(data)
+        },
+        error: function(xhr, ajazOption, thrownError){
+          console.log(error)
+        }
+      })
+
     })
 
   })
