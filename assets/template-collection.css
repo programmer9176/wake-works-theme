@@ -95,5 +95,7 @@
 }
 
 .collection__view-all a:not(.link) {
-  margin-top: 1rem;
+  margin-top: 3rem;
+    padding: 10px 20px;
+    border-radius: 3px;
 }
