@@ -1,18 +1,75 @@
+<style>
+  .contact-page {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contact-page h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  .contact-page label {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 3px;
+  }
+  .contact-page .form-control {
+    height: 40px;
+    font-size: 16px;
+  }
+  .contact-page input[type="submit"] {
+    font-size: 16px;
+  }
+</style>
+
 <div class="contact-page">
   <h1>Contact Us</h1>
-  <form id="contact_form" method="post" action="/contact">
-    <input type="hidden" name="form_type" value="contact">
+  <form
+    id="contact_form"
+    method="post"
+    action="/contact">
+    <input
+      type="hidden"
+      name="form_type"
+      value="contact">
 
     <label for="contact_name">Name:</label>
-    <input type="text" id="contact_name" name="contact[name]" required>
+    <input
+      type="text"
+      id="contact_name"
+      name="contact[name]"
+      class="form-control mb-3"
+      placeholder="Name"
+      required>
 
     <label for="contact_email">Email:</label>
-    <input type="email" id="contact_email" name="contact[email]" required>
+    <input
+      type="email"
+      id="contact_email"
+      name="contact[email]"
+      class="form-control mb-3"
+      placeholder="Email"
+      required>
 
     <label for="contact_message">Message:</label>
-    <textarea id="contact_message" name="contact[body]" required></textarea>
+    <textarea
+      id="contact_message"
+      name="contact[body]"
+      class="form-control mb-3"
+      placeholder="Message"
+      required></textarea>
 
-    <input type="submit" value="Send">
+    <input
+      type="submit"
+      class="btn btn-primary"
+      value="Send">
   </form>
 
   <script>
