@@ -32,16 +32,14 @@
     success: function (data) {
       console.log("success");
 
-      // ✅ Correct class selector
       $('.cart-drawer').removeClass('is-empty');
       $('.drawer__inner-empty').hide();
 
-      // ✅ Shopify ka recommended method use karein
       $('.cart-drawer').load('/cart #CartDrawer');
       $('#cart-icon-bubble').load('/cart #cart-icon-bubble');
     },
     error: function (xhr, ajaxOptions, thrownError) {
-      console.log(thrownError); // ✅ Correct error logging
+      console.log(thrownError);
     },
   });
 
