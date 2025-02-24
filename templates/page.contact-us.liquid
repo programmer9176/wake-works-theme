@@ -34,11 +34,13 @@
   <form
     id="contact_form"
     method="post"
-    action="/contact">
+    action="/contact"
+  >
     <input
       type="hidden"
       name="form_type"
-      value="contact">
+      value="contact"
+    >
 
     <label for="contact_name">Name:</label>
     <input
@@ -47,7 +49,8 @@
       name="contact[name]"
       class="form-control mb-3"
       placeholder="Name"
-      required>
+      required
+    >
 
     <label for="contact_email">Email:</label>
     <input
@@ -56,16 +59,28 @@
       name="contact[email]"
       class="form-control mb-3"
       placeholder="Email"
-      required>
+      required
+    >
 
     <label for="contact_email">Phone:</label>
     <input
-      type="email"
+      type="phone"
       id="contact_phone"
       name="contact[phone]"
       class="form-control mb-3"
       placeholder="Phone"
-      required>
+      required
+    >
+
+    <label for="contact_email">Phone:</label>
+    <input
+      type="phone"
+      id="contact_phone"
+      name="contact[phone]"
+      class="form-control mb-3"
+      placeholder="Phone"
+      required
+    >
 
     <label for="contact_message">Message:</label>
     <textarea
@@ -73,12 +88,14 @@
       name="contact[body]"
       class="form-control mb-3"
       placeholder="Message"
-      required></textarea>
+      required
+    ></textarea>
 
     <input
       type="submit"
       class="btn btn-primary"
-      value="Send">
+      value="Send"
+    >
   </form>
 
   <script>
