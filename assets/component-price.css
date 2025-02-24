@@ -100,7 +100,7 @@
   color: rgba(var(--color-foreground), 0.7);
 }
 .price__container {
-  width: 100%;
+  width: 100% !important;
 }
 .price__sale {
   display: flex !important;
