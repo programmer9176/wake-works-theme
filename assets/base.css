@@ -3336,6 +3336,7 @@ details-disclosure > details {
   .scroll-trigger:not(.scroll-trigger--offscreen).animate--fade-in {
     opacity: 1;
     animation: var(--animation-fade-in);
+    margin-bottom: 20px;
   }
 
   .scroll-trigger:not(.scroll-trigger--offscreen).animate--slide-in {
