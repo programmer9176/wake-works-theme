@@ -102,3 +102,9 @@
 .price__container {
   width: 100%;
 }
+.price__sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
