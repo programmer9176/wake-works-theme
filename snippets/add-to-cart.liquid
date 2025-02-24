@@ -3,25 +3,26 @@
     <input
       type="hidden"
       id="getVariantId"
-      value="{{ variant.id }}">
+      value="{{ variant.id }}"
+    >
   {% endfor -%}
   <button class="btn btn-success cart-btn w-100" id="card-product-id-{{ product.id }}">Add To Cart</button>
 </div>
 
 <script>
   $(document).ready(function(){
-  
+
     $('#card-product-id-{{ product.id }}').on('click', function(){
-  
+
       var variantId = $(this).parents('.cart-box').find('#getVariantId').val();
-  
+
       console.log(variantId)
-  
+
       let formObj = {
         quantity:1,
         id: variantId
       }
-  
+
       $.ajax({
         type:"POST",
         url: "/cart/add.js",
@@ -29,14 +30,16 @@
         data:formObj,
         dataType: "json",
         success: function(data){
-          console.log('success')
+          console.log('success');
+
+        $('.cart-count-bubble').load(location.href + '.cart-count-bubble')
         },
         error: function(xhr, ajazOption, thrownError){
           console.log(error)
         }
       })
-  
+
     })
-  
+
   })
 </script>
