@@ -35,7 +35,7 @@
         $('cart-drawer').removeClass('is-empty');
         $('.drawer__inner-empty').hide();
         $('cart-drawer').load(location.href + '#CartDrawer')
-        $('#cart-icon-bubble').load(location.href + '#cart-icon-bubble')
+        $('.cart-count-bubble').load(location.href + '.cart-count-bubble')
         },
         error: function(xhr, ajazOption, thrownError){
           console.log(error)
