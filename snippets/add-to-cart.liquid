@@ -32,7 +32,7 @@
         success: function(data){
           console.log('success');
 
-        $('.drawer__inner-empty').hide();
+        $('cart-drawer').removeClass('is-empty');
         $('.drawer__inner-empty').hide();
         $('#cart-icon-bubble').load(location.href + '#cart-icon-bubble')
         },
