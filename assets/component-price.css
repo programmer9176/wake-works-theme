@@ -99,3 +99,6 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+.price__container {
+  width: 100%;
+}
