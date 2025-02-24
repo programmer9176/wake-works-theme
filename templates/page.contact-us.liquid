@@ -34,11 +34,13 @@
   <form
     id="contact_form"
     method="post"
-    action="/contact">
+    action="/contact"
+  >
     <input
       type="hidden"
       name="form_type"
-      value="contact">
+      value="contact"
+    >
 
     <label for="contact_name">Name:</label>
     <input
@@ -47,7 +49,8 @@
       name="contact[name]"
       class="form-control mb-3"
       placeholder="Name"
-      required>
+      required
+    >
 
     <label for="contact_email">Email:</label>
     <input
@@ -56,7 +59,8 @@
       name="contact[email]"
       class="form-control mb-3"
       placeholder="Email"
-      required>
+      required
+    >
 
     <label for="contact_phone">Phone:</label>
     <input
@@ -65,7 +69,8 @@
       name="contact[phone]"
       class="form-control mb-3"
       placeholder="Phone"
-      required>
+      required
+    >
 
     <label for="contact_zip_code">Zip Code:</label>
     <input
@@ -74,7 +79,8 @@
       name="contact[zip_code]"
       class="form-control mb-3"
       placeholder="Zip Code"
-      required>
+      required
+    >
 
     <label for="contact_message">Message:</label>
     <textarea
@@ -82,30 +88,48 @@
       name="contact[body]"
       class="form-control mb-3"
       placeholder="Message"
-      required></textarea>
+      required
+    ></textarea>
 
     <input
       type="submit"
       class="btn btn-primary"
-      value="Send">
+      value="Send"
+    >
   </form>
 
   <script>
-    document.getElementById('contact_form').addEventListener('submit', function(e) {
+        document.getElementById('contact_form').addEventListener('submit', async function (e) {
       e.preventDefault();
-      const formData = new FormData(this);
-      fetch('/contact', { method: 'POST', body: formData })
-        .then(response => {
-          if(response.ok) {
-            this.innerHTML = '<p>Thank you for contacting us! We will get back to you soon.</p>';
-          } else {
-            alert('else cond');
-          }
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert('not working');
-        });
+
+      const form = this;
+      const formData = new FormData(form);
+      const submitButton = form.querySelector('input[type="submit"]');
+
+      submitButton.disabled = true;
+
+      // hCaptcha response lena
+      const captchaResponse = document.querySelector('[name="h-captcha-response"]')?.value;
+      if (!captchaResponse) {
+        alert('Please complete the hCaptcha verification.');
+        submitButton.disabled = false;
+        return;
+      }
+
+      formData.append('h-captcha-response', captchaResponse);
+
+      try {
+        const response = await fetch(form.action, { method: 'POST', body: formData });
+        const text = await response.text();
+
+        form.innerHTML = text.includes('error') ?
+          '<p>Form submission failed. Try again.</p>' :
+          '<p>Thank you! We will get back to you soon.</p>';
+      } catch (error) {
+        alert('Something went wrong. Please try again.');
+      }
+
+      submitButton.disabled = false;
     });
   </script>
 </div>
