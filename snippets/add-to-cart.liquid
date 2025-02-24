@@ -1,22 +1,27 @@
 <div class="cart-box">
   {% for variant in product.variants %}
-    <input type="hidden" id="getVariantId" value="{{ variant.id }}">
+    <input
+      type="hidden"
+      id="getVariantId"
+      value="{{ variant.id }}">
   {% endfor -%}
   <button class="btn btn-success cart-btn w-100" id="card-product-id-{{ product.id }}">Add To Cart</button>
 </div>
 
 <script>
   $(document).ready(function(){
-
+  
     $('#card-product-id-{{ product.id }}').on('click', function(){
-
-      var variantId = $(this).closest('.cart-box').find('#getVariantId').val();
-
+  
+      var variantId = $(this).parents('.cart-box').find('#getVariantId').val();
+  
+      console.log(variantId)
+  
       let formObj = {
         quantity:1,
         id: variantId
       }
-
+  
       $.ajax({
         type:"POST",
         url: "/cart/add.js",
@@ -30,8 +35,8 @@
           console.log(error)
         }
       })
-
+  
     })
-
+  
   })
 </script>
