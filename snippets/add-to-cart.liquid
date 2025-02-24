@@ -10,39 +10,43 @@
 </div>
 
 <script>
-  $(document).ready(function(){
+    $(document).ready(function(){
 
-    $('#card-product-id-{{ product.id }}').on('click', function(){
+      $('#card-product-id-{{ product.id }}').on('click', function(){
 
-      var variantId = $(this).parents('.cart-box').find('#getVariantId').val();
+        var variantId = $(this).parents('.cart-box').find('#getVariantId').val();
 
-      console.log(variantId)
+        console.log(variantId)
 
-      let formObj = {
-        quantity:1,
-        id: variantId
-      }
-
-      $.ajax({
-        type:"POST",
-        url: "/cart/add.js",
-        cache:false,
-        data:formObj,
-        dataType: "json",
-        success: function(data){
-          console.log('success');
-
-        $('cart-drawer').removeClass('is-empty');
-        $('.drawer__inner-empty').hide();
-        $('cart-drawer').load(location.href + '#CartDrawer')
-        $('#cart-icon-bubble').load(location.href + '#cart-icon-bubble')
-        },
-        error: function(xhr, ajazOption, thrownError){
-          console.log(error)
+        let formObj = {
+          quantity:1,
+          id: variantId
         }
+
+  $.ajax({
+    type: "POST",
+    url: "/cart/add.js",
+    cache: false,
+    data: formObj,
+    dataType: "json",
+    success: function (data) {
+      console.log("success");
+
+      // ✅ Correct class selector
+      $('.cart-drawer').removeClass('is-empty');
+      $('.drawer__inner-empty').hide();
+
+      // ✅ Shopify ka recommended method use karein
+      $('.cart-drawer').load('/cart #CartDrawer');
+      $('#cart-icon-bubble').load('/cart #cart-icon-bubble');
+    },
+    error: function (xhr, ajaxOptions, thrownError) {
+      console.log(thrownError); // ✅ Correct error logging
+    },
+  });
+
+
       })
 
     })
-
-  })
 </script>
