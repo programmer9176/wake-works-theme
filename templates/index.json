@@ -39,6 +39,24 @@
         "wake-banner-description": "Gear up with hydrofoils for cutting-edge glide. Includes stabilizers for balance, mast options for depth control, and protective cases for safe storage."
       }
     },
+    "wake_featured_product_mgUbnD": {
+      "type": "wake-featured-product",
+      "settings": {
+        "main-featured-heading": "SHOP BY CATEGORY",
+        "featured-product-img-1": "shopify://shop_images/featured-img-1_4444b815-19d9-4a47-9d74-4e2a0077510b.png",
+        "featured-product-heading-1": "GEAR",
+        "featured-product-description-1": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
+        "featured-product-img-2": "shopify://shop_images/featured-img-2_1.png",
+        "featured-product-heading-2": "GEAR",
+        "featured-product-description-2": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
+        "featured-product-img-3": "shopify://shop_images/featured-img-4.png",
+        "featured-product-heading-3": "GEAR",
+        "featured-product-description-3": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
+        "featured-product-img-4": "shopify://shop_images/featured-img-3.png",
+        "featured-product-heading-4": "GEAR",
+        "featured-product-description-4": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials."
+      }
+    },
     "wake_product_slider_RWAx8k": {
       "type": "wake-product-slider",
       "blocks": {
@@ -77,24 +95,6 @@
       ],
       "settings": {
         "product_main_title": "CLOSEOUT SALE"
-      }
-    },
-    "wake_featured_product_mgUbnD": {
-      "type": "wake-featured-product",
-      "settings": {
-        "main-featured-heading": "Hassan",
-        "featured-product-img-1": "shopify://shop_images/featured-img-1_4444b815-19d9-4a47-9d74-4e2a0077510b.png",
-        "featured-product-heading-1": "GEAR",
-        "featured-product-description-1": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
-        "featured-product-img-2": "shopify://shop_images/featured-img-2_1.png",
-        "featured-product-heading-2": "GEAR",
-        "featured-product-description-2": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
-        "featured-product-img-3": "shopify://shop_images/featured-img-4.png",
-        "featured-product-heading-3": "GEAR",
-        "featured-product-description-3": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials.",
-        "featured-product-img-4": "shopify://shop_images/featured-img-3.png",
-        "featured-product-heading-4": "GEAR",
-        "featured-product-description-4": "Get ready with essential safety and performance gear, featuring helmets for protection, gloves for grip, and waterproof bags for your essentials."
       }
     },
     "wake_product_logo_mG77RR": {
