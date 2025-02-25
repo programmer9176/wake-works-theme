@@ -39,6 +39,46 @@
         "wake-banner-description": "Gear up with hydrofoils for cutting-edge glide. Includes stabilizers for balance, mast options for depth control, and protective cases for safe storage."
       }
     },
+    "collection_list_ExeXyz": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_krFjAx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "abdullah"
+          }
+        },
+        "featured_collection_8gpG3f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wakesurf"
+          }
+        },
+        "featured_collection_QEidCb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wakefoil"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_krFjAx",
+        "featured_collection_8gpG3f",
+        "featured_collection_QEidCb"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "wake_featured_product_mgUbnD": {
       "type": "wake-featured-product",
       "settings": {
@@ -97,46 +137,6 @@
         "product_main_title": "CLOSEOUT SALE"
       }
     },
-    "collection_list_ExeXyz": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_krFjAx": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "abdullah"
-          }
-        },
-        "featured_collection_8gpG3f": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wakesurf"
-          }
-        },
-        "featured_collection_QEidCb": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wakefoil"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_krFjAx",
-        "featured_collection_8gpG3f",
-        "featured_collection_QEidCb"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "wake_product_logo_mG77RR": {
       "type": "wake-product-logo",
       "settings": {
@@ -152,9 +152,9 @@
     "wake_featured_bnner_RWxqet",
     "wake_featured_bnner_QEqtjt",
     "wake_featured_bnner_BtECQG",
+    "collection_list_ExeXyz",
     "wake_featured_product_mgUbnD",
     "wake_product_slider_RWAx8k",
-    "collection_list_ExeXyz",
     "wake_product_logo_mG77RR"
   ]
 }
