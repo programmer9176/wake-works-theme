@@ -1,4 +1,4 @@
-{% assign availabe = product.selected_or_first_available_variant.available %}}
+{% assign availabe = product.selected_or_first_available_variant.available %}
 
 <div class="cart-box">
   {% for variant in product.variants %}
@@ -8,7 +8,12 @@
       value="{{ variant.id }}"
     >
   {% endfor -%}
-  <button class="btn btn-success cart-btn w-100" id="card-product-id-{{ product.id }}">Add To Cart</button>
+  {% if availabe == true %}
+    <button class="btn btn-success cart-btn w-100" id="card-product-id-{{ product.id }}">Add To Cart</button>
+  {% else %}
+    <button class="btn btn-success cart-btn w-100" id="card-product-id-{{ product.id }}">Add To Cart</button>
+  {% endif -%}
+  }
 </div>
 
 <script>
