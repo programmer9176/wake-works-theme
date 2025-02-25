@@ -1,3 +1,5 @@
+{% assign availabe = product.selected_or_first_available_variant.available %}}
+
 <div class="cart-box">
   {% for variant in product.variants %}
     <input
