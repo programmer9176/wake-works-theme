@@ -106,6 +106,46 @@
         "product-logo-4": "shopify://shop_images/logo-4.png",
         "product-logo-5": "shopify://shop_images/logo-5.png"
       }
+    },
+    "collection_list_ExeXyz": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_krFjAx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_8gpG3f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_QEidCb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_krFjAx",
+        "featured_collection_8gpG3f",
+        "featured_collection_QEidCb"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -114,6 +154,7 @@
     "wake_featured_bnner_BtECQG",
     "wake_featured_product_mgUbnD",
     "wake_product_slider_RWAx8k",
+    "collection_list_ExeXyz",
     "wake_product_logo_mG77RR"
   ]
 }
