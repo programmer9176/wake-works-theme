@@ -97,23 +97,13 @@
         "product_main_title": "CLOSEOUT SALE"
       }
     },
-    "wake_product_logo_mG77RR": {
-      "type": "wake-product-logo",
-      "settings": {
-        "product-logo-1": "shopify://shop_images/phase5_logo.webp",
-        "product-logo-2": "shopify://shop_images/logo-2.webp",
-        "product-logo-3": "shopify://shop_images/logo-3.png",
-        "product-logo-4": "shopify://shop_images/logo-4.png",
-        "product-logo-5": "shopify://shop_images/logo-5.png"
-      }
-    },
     "collection_list_ExeXyz": {
       "type": "collection-list",
       "blocks": {
         "featured_collection_krFjAx": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "abdullah"
           }
         },
         "featured_collection_8gpG3f": {
@@ -145,6 +135,16 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "wake_product_logo_mG77RR": {
+      "type": "wake-product-logo",
+      "settings": {
+        "product-logo-1": "shopify://shop_images/phase5_logo.webp",
+        "product-logo-2": "shopify://shop_images/logo-2.webp",
+        "product-logo-3": "shopify://shop_images/logo-3.png",
+        "product-logo-4": "shopify://shop_images/logo-4.png",
+        "product-logo-5": "shopify://shop_images/logo-5.png"
       }
     }
   },
