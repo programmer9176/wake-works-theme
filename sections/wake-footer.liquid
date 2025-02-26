@@ -372,6 +372,64 @@
   </div>
 </footer>
 
+<script>
+  	$(document).ready(function(){
+  	$(".toggle-seearch-box").click(function(){
+  		$(".custom-search-box").toggle()
+  	})
+  })
+
+  const slider_2 = document.querySelector('.slider_2');
+  		//console.log(slider_2);
+  		let isDowns = false;
+  		let start;
+  		let scrollLefts;
+  		if(slider_2) {
+
+  			slider_2.addEventListener('mousedown', (e) => {
+  				isDowns = true;
+  				slider_2.classList.add('active');
+  				start = e.pageX - slider_2.offsetLeft;
+  				//console.log(start);
+  				scrollLefts = slider_2.scrollLeft;
+  				//console.log(scrollLefts);
+  			});
+  			slider_2.addEventListener('mouseleave', () => {
+  				isDowns = false;
+  				slider_2.classList.remove('active');
+  			});
+  			slider_2.addEventListener('mouseup', () => {
+  				isDowns = false;
+  				slider_2.classList.remove('active');
+  			});
+  			slider_2.addEventListener('mousemove', (e) => {
+  				if (!isDowns) return;
+  				e.preventDefault();
+  				const y = e.pageX - slider_2.offsetLeft;
+  				const run = (y - start) * 3; //scroll-fast
+  				slider_2.scrollLeft = scrollLefts - run;
+  				//console.log(run);
+  			});
+  		}
+
+  $(document).ready(function(){
+  	$(".toggler-footer").click(function(){
+  		console.log('toggle foter 1949')
+  		if($(this).find("i.fa").hasClass("fa-plus")){
+  			$(this).find("i.fa").removeClass("fa-plus").addClass("fa-minus")
+  			$(this).next(".main-nav-content").slideDown(400, function(){
+  				$(this).addClass("nav-show")
+  			})
+  		}else if($(this).find("i.fa").hasClass("fa-minus")){
+  			$(this).find("i.fa").removeClass("fa-minus").addClass("fa-plus")
+  			$(this).next(".main-nav-content").slideUp(400, function(){
+  				$(this).removeClass("nav-show")
+  			})
+  		}
+  	})
+  })
+</script>
+
 {% schema %}
 {
 "name": "wake footer",
