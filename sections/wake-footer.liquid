@@ -1,24 +1,4 @@
-<ul class="footer-list">
-  {% for link in linklists.footer-menu.links %}
-    <li>
-      <div class="toggler-footer footer-toggle-menu">
-        <a href="{{ link.url }}" class="bold-font">{{ link.title }}</a>
-        <i class="fa fa-plus"></i>
-      </div>
-      {% if link.links != blank %}
-        <div class="main-nav-content">
-          <ul class="inner-nav-list">
-            {% for sub_link in link.links %}
-              <li>
-                <a href="{{ sub_link.url }}">{{ sub_link.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+
 
 
 {% schema %}
