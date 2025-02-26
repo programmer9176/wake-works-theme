@@ -373,44 +373,6 @@
 </footer>
 
 <script>
-  	$(document).ready(function(){
-  	$(".toggle-seearch-box").click(function(){
-  		$(".custom-search-box").toggle()
-  	})
-  })
-
-  const slider_2 = document.querySelector('.slider_2');
-  		//console.log(slider_2);
-  		let isDowns = false;
-  		let start;
-  		let scrollLefts;
-  		if(slider_2) {
-
-  			slider_2.addEventListener('mousedown', (e) => {
-  				isDowns = true;
-  				slider_2.classList.add('active');
-  				start = e.pageX - slider_2.offsetLeft;
-  				//console.log(start);
-  				scrollLefts = slider_2.scrollLeft;
-  				//console.log(scrollLefts);
-  			});
-  			slider_2.addEventListener('mouseleave', () => {
-  				isDowns = false;
-  				slider_2.classList.remove('active');
-  			});
-  			slider_2.addEventListener('mouseup', () => {
-  				isDowns = false;
-  				slider_2.classList.remove('active');
-  			});
-  			slider_2.addEventListener('mousemove', (e) => {
-  				if (!isDowns) return;
-  				e.preventDefault();
-  				const y = e.pageX - slider_2.offsetLeft;
-  				const run = (y - start) * 3; //scroll-fast
-  				slider_2.scrollLeft = scrollLefts - run;
-  				//console.log(run);
-  			});
-  		}
 
   $(document).ready(function(){
   	$(".toggler-footer").click(function(){
