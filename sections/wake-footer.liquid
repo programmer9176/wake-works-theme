@@ -1,37 +1,17 @@
-<footer>
-  <div class="container-fluid bg-footer px-3 p-md-5">
-    <div class="row">
-      <div class="col-12 col-md-11 m-auto">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-3 pr-4 mb-md-5 mb-lg-0">
-              <div class="footer-logo">
-                <a href="/"><img src="/assets/images/logos/Online-Logo 1.png" alt=""></a>
-              </div>
-              <p class="footer-text my-5 pe-5">
-                Explore Wake Works top-notch foiling, wakeboarding, wakesurfing, and water sport equipment. Our
-                extensive range includes the latest gear, boards, and accessories, ensuring you find everything for your
-                water adventures. From high-quality foils, wakeboards to durable inflatables, our expertly curated
-                selection is perfect for both beginners and pros. Shop now for the best in water sports, backed by our
-                commitment to quality and customer satisfaction.
-              </p>
-            </div>
-            <div class="col-lg-3 px-4 mb-4 mb-lg-0">
-              <h2 class="footer-text footer-top-h">SHOP</h2>
-              <ul class="footer-list">
+<ul class="footer-list">
   {% for link in linklists.footer-menu.links %}
     <li>
       <div class="toggler-footer footer-toggle-menu">
         <a href="{{ link.url }}" class="bold-font">{{ link.title }}</a>
-        {% if link.links.size > 0 %}
-          <i class="fa fa-plus"></i>
-        {% endif %}
+        <i class="fa fa-plus"></i>
       </div>
-      {% if link.links.size > 0 %}
+      {% if link.links != blank %}
         <div class="main-nav-content">
           <ul class="inner-nav-list">
             {% for sub_link in link.links %}
-              <li><a href="{{ sub_link.url }}">{{ sub_link.title }}</a></li>
+              <li>
+                <a href="{{ sub_link.url }}">{{ sub_link.title }}</a>
+              </li>
             {% endfor %}
           </ul>
         </div>
@@ -39,114 +19,3 @@
     </li>
   {% endfor %}
 </ul>
-
-            </div>
-            <div class="col-lg-3 px-4 mb-4 mb-lg-0">
-              <h2 class="footer-text footer-top-h">BOATS</h2>
-              <ul class="footer-list">
-                <li>
-                  <a href="https://idahowatersports.com/boats?condition=New&amp;" class="footer-text" target="_blank"
-                    >New Boats For Sale</a
-                  >
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/boats?condition=Used" class="footer-text" target="_blank"
-                    >Used Boats For Sale</a
-                  >
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/docking" class="footer-text" target="_blank">Boat Docks</a>
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/storage" class="footer-text" target="_blank">Boat Storage</a>
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/service" class="footer-text" target="_blank"
-                    >Boat Service &amp; Maintenance</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3 px-4 mb-4 mb-lg-0">
-              <h2 class="footer-text footer-top-h">ACCOUNT</h2>
-              <ul class="footer-list">
-                <li>
-                  <div class="cart-btn-view p-1 accoutItemContainer">
-                    <div class="cart_btn_box">
-                      <a
-                        style="color: black;font-weight: 600;text-decoration: none;"
-                        class="d-flex cart_btn"
-                        href="javascript:(void)"
-                      >
-                        <span><span class="word_cart">CART</span>(<span class="cart-count">0</span>)</span>
-                      </a>
-                    </div>
-
-                    <div class="cart_btn_box">
-                      <a
-                        style="color: black;font-weight: 600;text-decoration: none;"
-                        href="/return-policy"
-                        class="footer-text footer-link"
-                        >Returns</a
-                      >
-                    </div>
-
-                    <div class="cart_btn_box">
-                      <a
-                        style="color: black;font-weight: 600;text-decoration: none;"
-                        href="/contact"
-                        class="footer-text footer-link"
-                        >Contact Us</a
-                      >
-                    </div>
-                  </div>
-
-                  <div class="footer-icons-sec">
-                    <div class="footer-social-cons">
-                      <a target="_blank" href="https://www.facebook.com/idahowatersports/?ref=tn_tnmn"
-                        ><i class="fab fa-facebook"></i
-                      ></a>
-                    </div>
-                    <div class="footer-social-cons">
-                      <a target="_blank" href="https://www.youtube.com/channel/UCnM4FoQ8XhyXmWpx_txAcCg"
-                        ><i class="fab fa-youtube"></i
-                      ></a>
-                    </div>
-                    <div class="footer-social-cons">
-                      <a target="_blank" href="https://www.instagram.com/idahowatersports/"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid bg-footer-end py-3">
-    <div class="row mx-0">
-      <div class="col-11 m-auto px-5">
-        <div class="footer-end">
-          <p class="footer-text">2024 Copyright Buy Wake Works | <a href="/page/privacy_policy">Privacy Policy</a></p>
-          <p class="footer-text"><a href="https://mdsbrand.com/" target="_blank">Powered by MDS Brand</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-{% schema %}
-{
-  "name": "wake footer",
-  "settings": [],
-  "presets": [
-    {
-    "name":"wake footer"
-  }
-  ]
-}
-{% endschema %}
