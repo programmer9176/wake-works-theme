@@ -154,7 +154,7 @@
                       {%- endif -%}
                     </div>
                   {% when 'custom_heading' %}
-                    {% include 'custom_heading' %}
+                    {{ block.settings['cutom-heading'] }}
                 {%- endcase -%}
               </div>
             {%- endfor -%}
