@@ -241,19 +241,6 @@
 {% schema %}
 {
   "name": "Footer Navigation",
-  "blocks": [
-    {
-      "type": "link_item",
-      "name": "Link Item",
-      "settings": [
-        {
-          "type": "url",
-          "id": "link_url",
-          "label": "Link URL"
-        }
-      ]
-    }
-  ],
   "settings": [
     {
       "type": "text",
@@ -270,8 +257,26 @@
       "id": "footer_boat_menu",
       "label": "Select Boats Menu"
     }
-  ],
 
+  ],
+  "blocks": [
+    {
+      "type": "link_item",
+      "name": "Link Item",
+      "settings": [
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+      "type": "text",
+      "id": "link_title",
+      "label": "Link Title"
+    }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Footer Navigation",
