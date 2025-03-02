@@ -321,6 +321,23 @@
   </div>
 </footer>
 
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'link_list' %}
+      {# Pehle se maujood code #}
+    {% when 'brand_information' %}
+      {# Pehle se maujood code #}
+    {% when 'text' %}
+      {# Pehle se maujood code #}
+    {% when 'image' %}
+      {# Pehle se maujood code #}
+    {% when 'custom_block' %}
+      <div class="custom-block">
+        {{ block.settings.custom_text }}
+      </div>
+  {% endcase %}
+{% endfor %}
+
 {% schema %}
 {
   "name": "t:sections.footer.name",
