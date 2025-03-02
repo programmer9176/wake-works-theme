@@ -241,6 +241,19 @@
 {% schema %}
 {
   "name": "Footer Navigation",
+  "blocks": [
+    {
+      "type": "link_item",
+      "name": "Link Item",
+      "settings": [
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
   "settings": [
     {
       "type": "text",
@@ -258,19 +271,7 @@
       "label": "Select Boats Menu"
     }
   ],
-  "blocks": [
-    {
-      "type": "link_item",
-      "name": "Link Item",
-      "settings": [
-        {
-          "type": "url",
-          "id": "link_url",
-          "label": "Link URL"
-        }
-      ]
-    }
-  ],
+
   "presets": [
     {
       "name": "Footer Navigation",
