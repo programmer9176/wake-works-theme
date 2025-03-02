@@ -115,7 +115,9 @@
                   <li>
                     <div class="toggler-footer footer-toggle-menu">
                       <a href="{{ item.url }}" class="bold-font">{{ item.title }}</a>
-                      <i class="fa fa-plus"></i>
+                      {% if item.links.size > 0 %}
+                        <i class="fa fa-plus"></i>
+                      {% endif %}
                     </div>
                     {% if item.links.size > 0 %}
                       <div class="main-nav-content" style="display: none;">
