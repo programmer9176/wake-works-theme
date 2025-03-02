@@ -135,9 +135,8 @@
               </ul>
             </div>
             <div class="col-lg-3 px-4 mb-4 mb-lg-0">
-              {% assign footer_boat_menu = linklists[section.settings.footer_boat_menu] %}
-
               <h2 class="footer-text footer-top-h">BOATS</h2>
+              {% assign footer_boat_menu = linklists[section.settings.footer_boat_menu] %}
               <ul class="footer-list">
                 {% for boat_item in footer_boat_menu.links %}
                   <li>
@@ -251,7 +250,7 @@
       "type": "link_list",
       "id": "footer_boat_menu",
       "label": "Select Boats Menu"
-    },
+    }
 
   ],
   "presets": [
