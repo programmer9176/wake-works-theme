@@ -439,7 +439,8 @@
   </script>
 {% endcomment %}
 
-{% assign footer_menu = linklists['footer-menu'] %}
+{% assign footer_menu = linklists[section.settings.footer_menu] %}
+
 <ul class="footer-list">
   {% for item in footer_menu.links %}
     <li>
