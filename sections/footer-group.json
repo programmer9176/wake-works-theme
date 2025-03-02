@@ -16,7 +16,8 @@
       "settings": {
         "footer_desc": "Explore Wake Works top-notch foiling, wakeboarding, wakesurfing, and water sport equipment. Our                extensive",
         "footer_menu": "wake-footer-menu",
-        "footer_boat_menu": "wake-boars-menu"
+        "footer_boat_menu": "wake-boars-menu",
+        "footer_account_menu": "wake-account-menu"
       }
     },
     "footer": {
