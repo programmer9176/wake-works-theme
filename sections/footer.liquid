@@ -154,9 +154,7 @@
                       {%- endif -%}
                     </div>
                   {% when 'custom_block' %}
-                    <div class="custom-block">
-                      {{ block.settings.custom_text }}
-                    </div>
+                    {% include 'custom_block' %}
                 {%- endcase -%}
               </div>
             {%- endfor -%}
