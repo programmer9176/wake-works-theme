@@ -464,11 +464,18 @@
 
 {% schema %}
 {
-"name": "wake footer",
-  "settings": [],
+  "name": "Footer Navigation",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "footer_menu",
+      "label": "Select Footer Menu"
+    }
+  ],
   "presets": [
     {
-      "name": "wake footer"
+      "name": "Footer Navigation",
+      "category": "Footer"
     }
   ]
 }
