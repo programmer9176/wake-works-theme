@@ -156,17 +156,13 @@
                       </a>
                     </div>
 
-                    {% for block in section.blocks %}
-                      <div class="cart_btn_box">
-                        <a
-                          style="color: black;font-weight: 600;text-decoration: none;"
-                          href="{{ block.settings.link_url }}"
-                          class="footer-text footer-link"
-                        >
-                          {{ block.settings.link_title }}
-                        </a>
-                      </div>
-                    {% endfor %}
+                    <ul class="footer-list">
+                      {% for boat_item in footer_boat_menu.links %}
+                        <li>
+                          <a href="{{ boat_item.url }}" class="footer-text">{{ boat_item.title }}</a>
+                        </li>
+                      {% endfor -%}
+                    </ul>
                   </div>
 
                   <div class="footer-icons-sec">
