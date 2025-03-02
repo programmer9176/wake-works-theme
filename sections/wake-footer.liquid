@@ -160,23 +160,17 @@
                       </a>
                     </div>
 
-                    <div class="cart_btn_box">
-                      <a
-                        style="color: black;font-weight: 600;text-decoration: none;"
-                        href="/return-policy"
-                        class="footer-text footer-link"
-                        >Returns</a
-                      >
-                    </div>
-
-                    <div class="cart_btn_box">
-                      <a
-                        style="color: black;font-weight: 600;text-decoration: none;"
-                        href="/contact"
-                        class="footer-text footer-link"
-                        >Contact Us</a
-                      >
-                    </div>
+                    {% for block in section.blocks %}
+                      <div class="cart_btn_box">
+                        <a
+                          style="color: black;font-weight: 600;text-decoration: none;"
+                          href="{{ block.settings.link_url }}"
+                          class="footer-text footer-link"
+                        >
+                          {{- block.settings.link_url -}}
+                        </a>
+                      </div>
+                    {% endfor %}
                   </div>
 
                   <div class="footer-icons-sec">
