@@ -14,10 +14,9 @@
     "wake_footer_7kcKin": {
       "type": "wake-footer",
       "settings": {
-        "footer_desc": "Explore Wake Works top-notch foiling, wakeboarding, wakesurfing, and water sport equipment. Our                extensive range includes the latest gear, boards, and accessories, ensuring you find everything for your                water adventures. From high-quality foils, wakeboards to durable inflatables, our expertly curated                selection is perfect for both beginners and pros. Shop now for the best in water sports, backed by our                commitment to quality and customer satisfaction.",
+        "footer_desc": "Explore Wake Works top-notch foiling, wakeboarding, wakesurfing, and water sport equipment. Our                extensive",
         "footer_menu": "wake-footer-menu",
-        "footer_boat_menu": "wake-boars-menu",
-        "link_title": "gjhghjjh"
+        "footer_boat_menu": "wake-boars-menu"
       }
     },
     "footer": {
