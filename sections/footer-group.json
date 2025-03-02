@@ -14,7 +14,8 @@
     "wake_footer_7kcKin": {
       "type": "wake-footer",
       "settings": {
-        "footer_menu": "wake-footer-menu"
+        "footer_menu": "wake-footer-menu",
+        "footer_boat_menu": "wake-boars-menu"
       }
     },
     "footer": {
