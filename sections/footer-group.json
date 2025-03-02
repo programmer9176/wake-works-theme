@@ -13,7 +13,9 @@
   "sections": {
     "wake_footer_7kcKin": {
       "type": "wake-footer",
-      "settings": {}
+      "settings": {
+        "footer_menu": "wake-footer-menu"
+      }
     },
     "footer": {
       "type": "footer",
