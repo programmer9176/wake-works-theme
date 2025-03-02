@@ -153,6 +153,10 @@
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
+                  {% when 'custom_block' %}
+                    <div class="custom-block">
+                      {{ block.settings.custom_text }}
+                    </div>
                 {%- endcase -%}
               </div>
             {%- endfor -%}
