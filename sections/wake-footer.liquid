@@ -139,27 +139,27 @@
 
               <h2 class="footer-text footer-top-h">BOATS</h2>
               <ul class="footer-list">
-                <li>
-                  <a href="https://idahowatersports.com/boats?condition=New&amp;" class="footer-text" target="_blank"
-                    >New Boats For Sale</a
-                  >
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/boats?condition=Used" class="footer-text" target="_blank"
-                    >Used Boats For Sale</a
-                  >
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/docking" class="footer-text" target="_blank">Boat Docks</a>
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/storage" class="footer-text" target="_blank">Boat Storage</a>
-                </li>
-                <li>
-                  <a href="https://idahowatersports.com/service" class="footer-text" target="_blank"
-                    >Boat Service &amp; Maintenance</a
-                  >
-                </li>
+                {% for item in footer_menu.links %}
+                  <li>
+                    <div class="toggler-footer footer-toggle-menu">
+                      <a href="{{ item.url }}" class="bold-font">{{ item.title }}</a>
+                      {% if item.links.size > 0 %}
+                        <i class="fa fa-plus"></i>
+                      {% endif %}
+                    </div>
+                    {% if item.links.size > 0 %}
+                      <div class="main-nav-content" style="display: none;">
+                        <ul class="inner-nav-list">
+                          {% for subitem in item.links %}
+                            <li>
+                              <a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    {% endif %}
+                  </li>
+                {% endfor %}
               </ul>
             </div>
             <div class="col-lg-3 px-4 mb-4 mb-lg-0">
