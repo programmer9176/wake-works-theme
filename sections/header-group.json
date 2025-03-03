@@ -53,15 +53,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "wake_product_logo_7fhaD6": {
-      "type": "wake-product-logo",
-      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "wake_product_logo_7fhaD6"
+    "header"
   ]
 }
