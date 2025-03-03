@@ -144,21 +144,19 @@
 
   <!-- form section -->
   <section class="formSection">
-    <div class="row">
-      <div class="col-lg-5">
-        <h3 class="return-title-heading mt-2">START YOUR RETURN</h3>
-        <form id="contact_form" method="post" action="/contact">
-          <!-- Hidden inputs for Shopify -->
-          <input type="hidden" name="form_type" value="contact">
-          <input type="hidden" name="utf8" value="✓">
+    <div class="form-box">
+      <h3 class="return-title-heading mt-2">START YOUR RETURN</h3>
+      <form id="contact_form" method="post" action="/contact">
+        <!-- Hidden inputs for Shopify -->
+        <input type="hidden" name="form_type" value="contact">
+        <input type="hidden" name="utf8" value="✓">
 
-          <input type="text" placeholder="First Name" name="contact[fname]" id="fname" class="return-input-box">
-          <input type="text" placeholder="Last Name" name="contact[lname]" id="lname" class="return-input-box">
-          <input type="email" name="contact[email]" id="email" placeholder="Email" class="return-input-box">
-          <input type="text" name="contact[order]" placeholder="Order #" id="order" class="return-input-box">
-          <button type="submit" class="my-5 return-form-btn">SUBMIT</button>
-        </form>
-      </div>
+        <input type="text" placeholder="First Name" name="contact[fname]" id="fname" class="return-input-box">
+        <input type="text" placeholder="Last Name" name="contact[lname]" id="lname" class="return-input-box">
+        <input type="email" name="contact[email]" id="email" placeholder="Email" class="return-input-box">
+        <input type="text" name="contact[order]" placeholder="Order #" id="order" class="return-input-box">
+        <button type="submit" class="my-5 return-form-btn">SUBMIT</button>
+      </form>
     </div>
   </section>
 </div>
