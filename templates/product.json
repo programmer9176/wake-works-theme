@@ -34,6 +34,10 @@
           "type": "price",
           "settings": {}
         },
+        "omnisend_email_marketing_sms_star_ratings_fnU7xn": {
+          "type": "shopify://apps/omnisend-email-marketing-sms/blocks/star-ratings/44704aa2-794f-4c5d-8c8e-039c841158e9",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -104,6 +108,7 @@
         "title",
         "caption",
         "price",
+        "omnisend_email_marketing_sms_star_ratings_fnU7xn",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -210,6 +215,21 @@
         "padding_bottom": 36
       }
     },
+    "174240804901ed6402": {
+      "type": "apps",
+      "blocks": {
+        "omnisend_email_marketing_sms_product_reviews_mqJ7nA": {
+          "type": "shopify://apps/omnisend-email-marketing-sms/blocks/product-reviews/44704aa2-794f-4c5d-8c8e-039c841158e9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "omnisend_email_marketing_sms_product_reviews_mqJ7nA"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -226,21 +246,6 @@
         "show_rating": false,
         "padding_top": 36,
         "padding_bottom": 28
-      }
-    },
-    "174240804901ed6402": {
-      "type": "apps",
-      "blocks": {
-        "omnisend_email_marketing_sms_product_reviews_mqJ7nA": {
-          "type": "shopify://apps/omnisend-email-marketing-sms/blocks/product-reviews/44704aa2-794f-4c5d-8c8e-039c841158e9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "omnisend_email_marketing_sms_product_reviews_mqJ7nA"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
