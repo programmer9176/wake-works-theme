@@ -19,6 +19,22 @@
         "wake-banner-description": "Dive into wakeboarding with top brands like Hyperlite, Ronix, and Liquid Force.. Our large selection of products includes everything for beginners to pros. From quality boards to essential gear like bindings, ropes, handles and accessories."
       }
     },
+    "video_slider_6Vp6db": {
+      "type": "video-slider",
+      "blocks": {
+        "video_KWHX6D": {
+          "type": "video",
+          "settings": {
+            "video_title": "My Video",
+            "video_file": "shopify://files/videos/Discover the Strong's Marine Difference!.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_KWHX6D"
+      ],
+      "settings": {}
+    },
     "wake_featured_bnner_QEqtjt": {
       "type": "wake-featured-bnner",
       "settings": {
@@ -150,6 +166,7 @@
   },
   "order": [
     "wake_featured_bnner_RWxqet",
+    "video_slider_6Vp6db",
     "wake_featured_bnner_QEqtjt",
     "wake_featured_bnner_BtECQG",
     "collection_list_ExeXyz",
