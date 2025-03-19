@@ -1,3 +1,8 @@
+<style>
+    .slider-video{
+  }
+</style>
+
 {% schema %}
 {
   "name": "Video Slider",
@@ -35,7 +40,7 @@
     <div class="video-slide">
       <h3>{{ block.settings.video_title }}</h3>
       {% if block.settings.video_file != blank %}
-        <div>
+        <div class="slider-video">
           <video controls playsinline autoplay muted loop>
             <source src="{{ block.settings.video_file | file_url }}" type="video/mp4">
             Your browser does not support the video tag.
