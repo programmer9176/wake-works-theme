@@ -1,22 +1,75 @@
 {% schema %}
 {
   "name": "Video Slider",
-  "settings": [
+  "settings": [],
+  "blocks": [
     {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "My Custom Section"
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "video_title",
+          "label": "Video Title",
+          "default": "My Video"
+        },
+        {
+          "type": "video",
+          "id": "video_file",
+          "label": "Upload Video"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Video Slider"
+      "name": "Video Slider",
+      "category": "Custom"
     }
   ]
 }
 {% endschema %}
 
-<div class="custom-section">
-  <h2>{{ section.settings.heading }}</h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+>
+
+<div class="owl-carousel video-slider">
+  {% for block in section.blocks %}
+    <div class="video-slide">
+      <h3>{{ block.settings.video_title }}</h3>
+      {% if block.settings.video_file != blank %}
+        <video controls>
+          <source src="{{ block.settings.video_file | file_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      {% else %}
+        <p>No video uploaded</p>
+      {% endif %}
+    </div>
+  {% endfor %}
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".video-slider").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 1 },
+        1000: { items: 1 }
+      }
+    });
+  });
+</script>
